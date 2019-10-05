@@ -11,5 +11,8 @@ def multi(a, b):
 
 
 def div(a, b):
-    return a / b
-
+    try:
+        wynik = a / b
+        return wynik
+    except ZeroDivisionError:
+        return "Infinity"
